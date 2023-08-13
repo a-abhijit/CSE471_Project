@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update or Delete</title>
+    <!-- Your head content -->
+    <style>
+        /* Add your styles here */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .account-container {
+            display: flex;
+            width: 80%;
+            border: 1px solid #ddd;
+            overflow: hidden;
+        }
+
+        .account-section {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .update-section {
+            background-color: #c8e9b2;
+        }
+
+        .delete-section {
+            background-color: #bc5d5d;
+        }
+
+        .account-form {
+            text-align: center;
+            width: 100%;
+        }
+
+        .account-form label,
+        .account-form input[type="text"],
+        .account-form input[type="email"] {
+            width: 100%;
+            margin: 5px 0;
+        }
+
+        .account-form input[type="submit"] {
+            background-color: #b1e549;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        
+        /* Add styling for the home button */
+        .home-button {
+            background-color: #b1e549;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            text-decoration: none;
+            position: absolute;
+            top: 7px;
+            left: 7px;
+        }
+        
+        /* Background styling */
+        .background {
+            width: 100%;
+            height: 100vh;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            background: url('https://drive.google.com/uc?export=view&id=1JlJDH-tnZKgSGeVbJ__wutmTe4HpBH3V') no-repeat center center fixed;
+            background-size: cover;
+            filter: blur(15px);
+        }
+    </style>
+</head>
+<body>
+    <!-- Background -->
+    <div class="background"></div>
+    
+    <!-- HOME button at the top left corner -->
+    <a class="home-button" href="{% url 'index' %}">HOME</a>
+    
+    <div class="account-container">
+        <div class="account-section update-section">
+            <h2>Update Account</h2>
+            <p>Update your username and email.</p>
+
+            <form class="account-form" method="post">
+                {% csrf_token %}
+                <input type="hidden" name="action" value="update">
+
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" value="{{ user.username }}" placeholder="Enter new username">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" value="{{ user.email }}" placeholder="Enter new email">
+
+                <input type="submit" value="Update Account">
+            </form>
+        </div>
+        <div class="account-section delete-section">
+            <h2 >Delete Account</h2>
+            <p>Are you sure you want to delete your account? This action cannot be undone.</p>
+
+            <form class="account-form" method="post">
+                {% csrf_token %}
+                <input type="hidden" name="action" value="delete">
+                <input type="submit" value="Delete Account" style="background-color: #f70606;">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
