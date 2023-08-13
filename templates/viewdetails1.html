@@ -1,0 +1,265 @@
+
+  <!DOCTYPE html>
+	<html lang="zxx" class="no-js">
+	<head>
+  
+		<!-- Mobile Specific Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Favicon-->
+		<link rel="shortcut icon" href="/static/img/fav.png">
+		<!-- Author Meta -->
+		<meta name="author" content="codepixer">
+		<!-- Meta Description -->
+		<meta name="description" content="">
+		<!-- Meta Keyword -->
+		<meta name="keywords" content="">
+		<!-- meta character set -->
+		<meta charset="UTF-8">
+		<!-- Site Title -->
+		<title>Art Museum</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+    <!--
+    CSS
+    ============================================= -->
+    <link rel="stylesheet" href="/static/css/linearicons.css">
+    <link rel="stylesheet" href="/static/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/css/magnific-popup.css">
+    <link rel="stylesheet" href="/static/css/nice-select.css">					
+    <link rel="stylesheet" href="/static/css/animate.min.css">
+    <link rel="stylesheet" href="/static/css/owl.carousel.css">
+    <link rel="stylesheet" href="/static/css/main.css">
+    <link rel="stylesheet" href="/static/css/review.css">
+    <style>
+    /* Add a margin to the review button */
+    .review-icon {
+      margin-top: 50px;
+      margin-right: 20px;
+      position: relative;
+    }
+    
+    /* Style for the review count badge */
+    .review-count {
+      background-color: rgb(192, 74, 74);
+      color: white;
+      font-size: 12px;
+      padding: 2px 6px;
+      border-radius: 50%;
+      position: absolute;
+      top: -5px;
+      right: -5px;
+    }
+    
+    /* Style for the review dropdown */
+    .review-dropdown {
+    display: none;
+    position: absolute;
+    top: -115px;
+    right:300px; /* Adjust this value to move it to the left */
+    width: 200px;
+    background-color: #646681;
+    border: 3px solid rgb(44, 55, 51) 8;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    z-index: 1;
+      }
+  
+    
+    .review-list {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .review-item {
+      padding: 10px;
+      border-bottom: 1px solid #cb1818;
+    }
+    
+    
+    .review-item:last-child {
+      border-bottom: none;
+    }
+    </style>
+    <style>
+      .review-button {
+        margin-top: -25px;
+        color: rgb(96, 10, 10); /* Set the text color to white */
+        text-align: right; /* Align the content to the right */
+        margin-right: 150px; /* Increase the margin to move it further right */
+      }
+    </style>
+    <style>
+      .review-content {
+        color: rgb(218, 210, 195);
+      }
+      
+      .review-timestamp {
+        color: rgb(46, 150, 82);
+      }
+      </style>
+  <style media="screen">
+    *,
+    *:before,
+    *:after {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        background-color: #d7f0e9;
+    }
+    
+        
+    button {
+              margin-top: 14px;
+              width: 20%;
+              background-color: #b1e549;
+              color: #080710;
+              padding: 15px 0;
+              font-size: 18px;
+              font-weight: 600;
+              border-radius: 5px;
+              cursor: pointer;
+          }
+  </style>
+  <style>
+    /* Other styles... */
+    .review-username {
+      color: #ffffff; /* Change to your desired color */
+      font-style: italic; /* Example styling */
+    }
+  </style>
+</head>
+<body>
+      <!-- Back to Home button -->
+  <p align="left"><a class="back-btn" href="{% url 'index' %}">← Back to Home</a></p>
+			  </header ><!-- #header -->
+        <header align="center" >
+          <h1 >Bangladesh National Museum</h1>
+      </header>
+      <!-- Gallery section -->
+
+    </section>
+    <!-- End gallery Area -->			
+      <!-- About the Museum section -->
+      <section class="about-museum">
+          <h3 align="center">About the Museum</h3>
+          <p align="center" >
+            The Bangladesh National Museum is a must-visit for history lovers. The museum houses a rich collection of artifacts that offer insights into the country's rich past. From ancient coins and sculptures to traditional musical instruments and textiles, the museum has something for everyone. The museum is located in the heart of Dhaka, and is easily accessible by public transport. The admission fee is very reasonable, and the staff is friendly and helpful. I highly recommend a visit to the Bangladesh National Museum!
+          </p>
+      </section>
+      <section class="gallery">
+        <h2 >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gallery</h2>
+        <!-- Add your image gallery here -->
+<!-- Container for the image gallery -->
+<head align="left">
+  <link rel="stylesheet" href="/static/css/gallery.css">
+</head>
+<div class="container">
+  <ul class="slides">
+    <li id="slide1"><img src="/static/img/museum/Bangladesh_National_Meuseum/1.jpg"  alt="" /></li>
+    <li id="slide2"><img src="/static/img/museum/Bangladesh_National_Meuseum/2.jpg" alt="" /></li>
+    <li id="slide3"><img src="/static/img/museum/Bangladesh_National_Meuseum/3.jpg" alt="" /></li>
+    <li id="slide4"><img src="/static/img/museum/Bangladesh_National_Meuseum/4.jpg" alt="" /></li>
+    <li id="slide5"><img src="/static/img/museum/Bangladesh_National_Meuseum/5.jpg" alt="" /></li>
+  </ul>
+
+  <ul class="thumbnails">
+    <li>
+      <a href="#slide1"><img src="/static/img/museum/Bangladesh_National_Meuseum/1.jpg" /></a>
+    </li>
+    <li>
+      <a href="#slide2"><img src="/static/img/museum/Bangladesh_National_Meuseum/2.jpg" /></a>
+    </li>
+    <li>
+      <a href="#slide3"><img src="/static/img/museum/Bangladesh_National_Meuseum/3.jpg" /></a>
+    </li>
+    <li>
+      <a href="#slide4"><img src="/static/img/museum/Bangladesh_National_Meuseum/4.jpg" /></a>
+    </li>
+    <li>
+      <a href="#slide5"><img src="/static/img/museum/Bangladesh_National_Meuseum/5.jpg" /></a>
+    </li>
+  </ul>
+  <p align="center" >></p>
+        <!-- Map section -->
+        <section  class  ="map">
+          <h2 align="right" >Map</h2>
+          <p align="right"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.277970872194!2d90.39231097454757!3d23.737464989274283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8eabd8931e1%3A0x65b3d31b26bf2e5!2z4Kas4Ka-4KaC4Kay4Ka-4Kam4KeH4Ka2IOCmnOCmvuCmpOCngOCnnyDgppzgpr7gpqbgp4HgppjgprA!5e0!3m2!1sen!2sbd!4v1691130766367!5m2!1sen!2sbd" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+      </section>
+
+<!-- Inside the review section of your HTML -->
+<div class="review-section">
+  <h3 align="center">Review from visitors</h3>
+  <form method="post" action="{% url 'submit_review' %}">
+    {% csrf_token %}
+    <label for="rating">Rating:</label>
+    <select id="rating" name="rating" required>
+      <option value="" disabled selected>Select a rating</option>
+      <option value="5">5</option>
+      <option value="4">4</option>
+      <option value="3">3</option>
+      <option value="2">2</option>
+      <option value="1">1</option>
+    </select>
+    <label for="comment">Comment:</label>
+    <textarea id="comment" name="comment" required></textarea>
+    <button type="submit">Submit Review</button>
+  </form>
+  <div class="review-button" style="color: rgb(38, 219, 89);" >
+    <p align="right"><span ><---Show Reviews</span></p>
+  </div>
+    </ul>
+  <div class="review-dropdown">
+    <ul>
+      <h4 align="center" style="color: white;" >Reviews</h4>
+      {% for review in reviews %}
+        <li>
+          <p class="review-username">Posted by: {{ review.user.username }}</p>
+          <h5 style="color: white;">Ratings : {{ review.rating }} stars</h5>
+          <p class="review-content">Comment :{{ review.comment }}</p>
+          <b>------------------------</b>
+          
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+
+
+
+      
+			
+
+			<script src="/static/js/vendor/jquery-2.2.4.min.js"></script>
+			<script src="/static/https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+			<script src="/static/js/vendor/bootstrap.min.js"></script>			
+			<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+  		<script src="/static/js/easing.min.js"></script>			
+			<script src="/static/js/hoverIntent.js"></script>
+			<script src="/static/js/superfish.min.js"></script>	
+			<script src="/static/js/jquery.ajaxchimp.min.js"></script>
+			<script src="/static/js/jquery.magnific-popup.min.js"></script>	
+			<script src="/static/js/owl.carousel.min.js"></script>	
+			<script src="/static/js/imagesloaded.pkgd.min.js"></script>
+			<script src="/static/js/justified.min.js"></script>					
+			<script src="/static/js/jquery.sticky.js"></script>
+			<script src="/static/js/jquery.nice-select.min.js"></script>			
+			<script src="/static/js/parallax.min.js"></script>		
+			<script src="/static/js/mail-script.js"></script>	
+			<script src="/static/js/main.js"></script>
+      <script>
+      $(document).ready(function() {
+        $('.review-button').click(function() {
+          $('.review-dropdown').toggle();
+        });
+      });
+
+      </script>   
+		</body>
+	</html>
+
+
+
