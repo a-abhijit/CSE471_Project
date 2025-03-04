@@ -3,3 +3,4 @@ requests
 whitenoise
 stripe
 pillow
+gunicorn
