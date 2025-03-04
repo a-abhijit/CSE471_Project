@@ -148,10 +148,14 @@ REDIRECT_DOMAIN = 'http://127.0.0.1:8000'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-STATICFILES_DIRS = [
-    BASE_DIR , "static",
-]
-STATIC_ROOT = 'statifiles'
+import os
+
+# BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
+
 
 # MEDIA_URL = '/static/img/'
 # MEDIA_ROOT = os.path.join(BASE_DIR, '/static/img/')
