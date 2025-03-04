@@ -2,3 +2,4 @@ django
 requests
 whitenoise
 stripe
+pillow
